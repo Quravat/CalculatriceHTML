@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="calculator">
+        <div class="screen" id="screen">0</div>
+        <div class="buttons">
+            <button class="button clear" onclick="clearScreen()">C</button>
+            <button class="button special" onclick="appendToScreen('√')">√</button>
+            <button class="button special" onclick="appendToScreen('x²')">x²</button>
+            <button class="button operator" onclick="appendToScreen('/')">/</button>
+
+            <button class="button" onclick="appendToScreen('7')">7</button>
+            <button class="button" onclick="appendToScreen('8')">8</button>
+            <button class="button" onclick="appendToScreen('9')">9</button>
+            <button class="button operator" onclick="appendToScreen('*')">*</button>
+
+            <button class="button" onclick="appendToScreen('4')">4</button>
+            <button class="button" onclick="appendToScreen('5')">5</button>
+            <button class="button" onclick="appendToScreen('6')">6</button>
+            <button class="button operator" onclick="appendToScreen('-')">-</button>
+
+            <button class="button" onclick="appendToScreen('1')">1</button>
+            <button class="button" onclick="appendToScreen('2')">2</button>
+            <button class="button" onclick="appendToScreen('3')">3</button>
+            <button class="button operator" onclick="appendToScreen('+')">+</button>
+
+            <button class="button" onclick="appendToScreen('0')">0</button>
+            <button class="button" onclick="appendToScreen('.')">.</button>
+            <button class="button equals" onclick="calculateResult()">=</button>
+            <button class="button special" onclick="appendToScreen('sin')">sin</button>
+
+            <button class="button special" onclick="appendToScreen('cos')">cos</button>
+            <button class="button special" onclick="appendToScreen('tan')">tan</button>
+            <button class="button special" onclick="appendToScreen('log')">log</button>
+            <button class="button special" onclick="appendToScreen('π')">π</button>
+        </div>
+    </div>
+
+    <div class="credits">
+        <h2></h2>
+        <pre>
+Développeur : Quravat
+Date de Création : 2020
+Technologies utilisées : HTML, CSS, JavaScript
+Bibliothèques : Aucune (pas de framework utilisé)
+        </pre>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
